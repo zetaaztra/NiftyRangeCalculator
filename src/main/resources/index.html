@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nifty Range Calc by Pravin A Mathew</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nifty Range Calc by Pravin A Mathew</h1>
+        <form id="niftyRangeForm">
+            <label for="niftySpotPrice">Enter Nifty spot price ranging from 1-1000000:</label><br>
+            <input type="number" id="niftySpotPrice" name="niftySpotPrice" min="1" max="1000000" required><br><br>
+            
+            <label for="impliedVolatility">Enter Implied Volatility (IV%):</label><br>
+            <input type="number" id="impliedVolatility" name="impliedVolatility" required><br><br>
+            
+            <label for="daysTillExpiry">Enter days till expiry:</label><br>
+            <input type="number" id="daysTillExpiry" name="daysTillExpiry" required><br><br>
+            
+            <input type="button" value="Calculate" onclick="calculateRange()">
+        </form>
+        <p id="result">Range +/-: </p>
+        <p id="rangeResult">Nifty Range: </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
